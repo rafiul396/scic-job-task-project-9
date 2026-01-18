@@ -1,6 +1,5 @@
 "use client"
 import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
 
 export default function ProductDetailsPage() {
 
@@ -77,30 +76,13 @@ export default function ProductDetailsPage() {
     //     }
     // ];
 
-    const [product, setProduct] = useState(null);
-
     const productId = useParams();
     const { slug } = productId
+    const id = Number(slug);
 
     // const product = data.find((item) => item.id === Number(slug));
 
     // console.log(product);
-
-
-
-    useEffect(() => {
-        fetch(`https://jot-task-scic.vercel.app/products/${slug}`)
-            .then(res => res.json())
-            .then(data => setProduct(data))
-            .catch(err => console.error(err));
-    }, [slug]);
-
-    
-    if (!product) {
-        return <h2 className="text-center py-20 text-xl text-black">Loading product...</h2>;
-    }
-    console.log(product);
-
 
 
     // if (!product) {

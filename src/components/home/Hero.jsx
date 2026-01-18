@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-[90vh] bg-wood-pattern bg-cover bg-center flex items-center">
+    <section className="relative w-full py-20 bg-wood-pattern bg-cover bg-center flex items-center">
       {/* Overlay for text readability */}
       <div className="absolute inset-0 bg-black/40"></div>
 
       <div className="container mx-auto px-6 lg:px-20 relative z-10 flex flex-col lg:flex-row items-center justify-between">
         {/* Text Content */}
         <div className="text-center lg:text-left max-w-xl">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-(--background) leading-tight mb-6">
+          <h1 className="text-2xl sm:text-5xl xl:text-6xl font-extrabold text-(--background) leading-tight mb-6">
             Handcrafted Wooden Products <br /> Delivered to Your Doorstep
           </h1>
           <p className="text-lg sm:text-xl text-(--background) mb-8">
