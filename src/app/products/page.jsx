@@ -142,7 +142,7 @@ export default async function ItemListPage() {
     const data = await res.json();
 
     return (
-        <section className="py-20 bg-[var(--secondary)]">
+        <section className="py-20 bg-(--secondary)">
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Page Title */}
@@ -175,7 +175,7 @@ export default async function ItemListPage() {
                                 </p>
 
                                 <Link
-                                    href={`/products/${item._id}`}
+                                    href={`/details/${item._id}`}
                                     className="w-full bg-[var(--secondary)] text-[var(--background)] py-2 rounded-lg hover:bg-primary/90 transition mt-auto text-center"
                                 >
                                     View Details
